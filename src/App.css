@@ -1,0 +1,177 @@
+/* Main App Styling */
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 1rem;
+  margin: 0;
+}
+
+/* To-Do Box Container */
+.todo-box {
+  background-color: #0b1e4a;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Plus Button */
+.input-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+li input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Buttons inside list */
+li button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Edit and Delete Button Colors */
+li .edit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+li .delete-btn {
+  background-color: #ffc107;
+  color: black;
+}
+li button.btn btn-primary update-btn {
+  background-color: #17a2b8; /* Bootstrap info blue */
+  color: white;
+}
+/* Center the modal and give it custom size + background */
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Modal Container */
+.custom-modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Modal Input */
+.custom-modal input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Modal Button Group */
+.modal-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* Modal Buttons */
+.custom-modal button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.custom-modal button.update-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.custom-modal button.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+
+/* Force list buttons to align horizontally */
+li > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
