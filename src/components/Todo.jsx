@@ -41,7 +41,7 @@ function Todo({ task, index, onDelete, onUpdate }) {
         overlayClassName="modal-overlay"
         contentLabel="Edit Task"
       >
-        <h2>Edit Task</h2>
+        <h2 className='text-black'>Edit Task</h2>
         <input
           type="text"
           value={editText}
